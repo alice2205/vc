@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  height: auto;
+}
+
+.wrapper {
+  max-width: 1084px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #e1f1f8;
+  overflow: hidden;
+}
+
+@media (max-width: 1084px) {
+  .wrapper {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .wrapper {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper {
+    max-width: none;
+  }
+}
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(45deg, #00a9ea, #005baa);
+  width: 100%;
+  height: 200px;
+}
+
+.user {
+  padding-left: 70px;
+  color: aliceblue;
+  font-style: normal;
+}
+
+.user-img {
+  max-width: 150px;
+  max-height: 150px;
+  outline: 3px solid aliceblue;
+  outline-offset: 5px;
+  border-radius: 50%;
+}
+
+.user_name {
+  font-family: "Bebas Neue";
+  font-size: 40px;
+  margin: 0 0 10px 0;
+  letter-spacing: 5px;
+}
+
+.user_position {
+  font-family: "PT Sans Narrow";
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.column {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(320px, 1fr))[2];
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
+}
+
+.info {
+  padding: 20px;
+}
+
+.title {
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  font-style: normal;
+  color: #2d3134;
+  margin: 0 0 20px 0;
+  letter-spacing: 1px;
+}
+
+.text {
+  font-family: "PT Sans Narrow";
+  text-align: justify;
+  padding: 0 20px 20px 0;
+  margin: 0;
+}
+
+.contact_info {
+  margin: 0;
+}
+
+.contact_info_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0 0 10px 0;
+  font-family: "PT Sans Narrow";
+  font-size: 16px;
+  font-style: normal;
+  color: #2d3134;
+  margin: 0;
+}
+.contact_info_block .block_title {
+  font-weight: bold;
+  margin: 0;
+}
+.contact_info_block .block_info {
+  padding-left: 10px;
+  margin: 0;
+}
+
+.line_design {
+  margin-left: 20px;
+}
+
+.line_design_gray {
+  width: 300px;
+  height: 10px;
+  background-color: #d1d2d4;
+  border-radius: 10px;
+}
+
+.line_design_blue,
+.blue_html,
+.blue_css,
+.blue_js,
+.blue_figma,
+.blue_webflow,
+.blue_sql {
+  background-color: #18c1f1;
+  width: 300px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.blue_html {
+  width: 250px;
+}
+
+.blue_css {
+  width: 100px;
+}
+
+.blue_js {
+  width: 50px;
+}
+
+.blue_figma {
+  width: 250px;
+}
+
+.blue_webflow {
+  width: 70px;
+}
+
+.blue_sql {
+  width: 50px;
+}
+
+.skill {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.skill .skill_name {
+  width: 50px;
+  font-family: "PT Sans Narrow";
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.experience, .education {
+  margin-bottom: 24px;
+  font-family: "Bebas Neue";
+  font-size: 16px;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+.experience .experience_title, .experience .education_title, .education .experience_title, .education .education_title {
+  color: #2d3134;
+  margin: 0;
+}
+.experience .education_position, .education .education_position {
+  color: #226ac9;
+  margin: 0;
+}
+.experience .experience_text, .experience .education_text, .education .experience_text, .education .education_text {
+  margin: 0;
+  text-align: justify;
+  font-family: "PT Sans Narrow";
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #009FE2;
+  z-index: -1;
+}
+
+.document_link {
+  margin: 0;
+}
+
+.image {
+  width: 400px;
+  height: 200px;
+  overflow: hidden;
+}
+.image .image-webflow {
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+  width: 400px;
+  height: 200px;
+}
+.image .image-webflow:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(45deg, #00a9ea, #005baa);
+  width: 100%;
+  height: 80px;
+}

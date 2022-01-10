@@ -1,0 +1,256 @@
+// vars
+//color
+$bg-color: linear-gradient(45deg, #00a9ea, #005baa);
+$bg-particles: #009FE2;
+$bg-color-wrapper: rgb(225, 241, 248);
+$user-color: aliceblue;
+$main-fonts-color: #2d3134;
+$line-gray: #d1d2d4;
+$line-blue: #18c1f1;
+$subtitle-fonts-color: #226ac9;
+
+//fonts
+$title: "Bebas Neue";
+$sub-title: "PT Sans Narrow";
+  
+@mixin line-blue-w($w)  {
+  width: $w;
+}
+
+body {
+  margin: 0;
+  height: auto;
+}
+
+.wrapper {
+  max-width: 1084px;
+  height: auto;
+  margin: 0 auto;
+  background-color: $bg-color-wrapper;
+  overflow: hidden;
+}
+
+@media (max-width: 1084px) {
+  .wrapper {
+    max-width: 970px;
+  }
+};
+
+@media (max-width: 992px) {
+  .wrapper {
+    max-width: 750px;
+  }
+};
+
+@media (max-width: 767px) {
+  .wrapper {
+    max-width: none;
+  }
+};
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: $bg-color;
+  width: 100%;
+  height: 200px;
+}
+
+.user {
+  padding-left: 70px;
+  color: $user-color;
+  font-style: normal;
+}
+
+.user-img {
+  max-width: 150px;
+  max-height: 150px;
+  outline: 3px solid $user-color;
+  outline-offset: 5px;
+  border-radius: 50%;
+}
+.user_name {
+  font-family: $title;
+  font-size: 40px;
+  margin: 0 0 10px 0;
+  letter-spacing: 5px;
+}
+.user_position {
+  font-family: $sub-title;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.column {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
+}
+
+.info {
+  padding: 20px;
+}
+
+.title {
+  font-family: $title;
+  font-size: 20px;
+  font-style: normal;
+  color: $main-fonts-color;
+  margin: 0 0 20px 0;
+  letter-spacing: 1px;
+}
+
+.text {
+  font-family: $sub-title;
+  text-align: justify;
+  padding: 0 20px 20px 0;
+  margin: 0;
+  
+}
+
+.contact_info {
+  margin: 0;
+}
+
+.contact_info_block {
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 10px 0;
+  font-family: $sub-title;
+  font-size: 16px;
+  font-style: normal;
+  color: $main-fonts-color;
+  margin: 0;
+  .block_title {
+    font-weight: bold;
+    margin: 0;
+  }
+  .block_info {
+    padding-left: 10px;
+    margin: 0;
+  }
+}
+
+.line_design {
+  margin-left: 20px;
+}
+
+.line_design_gray {
+  width: 300px;
+  height: 10px;
+  background-color: $line-gray;
+  border-radius: 10px;
+  
+}
+.line_design_blue,
+  .blue_html,
+  .blue_css,
+  .blue_js,
+  .blue_figma,
+  .blue_webflow,
+  .blue_sql {
+    background-color: $line-blue;
+    width: 300px;
+    height: 10px;
+    border-radius: 10px;
+  }
+
+.blue_html {
+  @include line-blue-w(250px);
+}
+
+.blue_css {
+  @include line-blue-w(100px);
+}
+
+.blue_js {
+  @include line-blue-w(50px);
+}
+
+.blue_figma {
+  @include line-blue-w(250px);
+}
+
+.blue_webflow {
+  @include line-blue-w(70px);
+}
+
+.blue_sql {
+  @include line-blue-w(50px);
+}
+
+
+.skill {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .skill_name {
+    width: 50px;
+    font-family: $sub-title;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+}
+
+.experience, .education {
+  margin-bottom: 24px;
+  font-family: $title;
+  font-size: 16px;
+  font-style: normal;
+  letter-spacing: 1px;
+  .experience_title, .education_title {
+    color: $main-fonts-color;
+    margin: 0;
+  }
+  .education_position {
+    color: $subtitle-fonts-color;
+    margin: 0;
+  }
+  .experience_text, .education_text {
+    margin: 0;
+    text-align: justify;
+    font-family: $sub-title;
+  }
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-color: $bg-particles;
+  z-index: -1;
+}
+
+.document_link {
+  margin: 0;
+}
+
+.image {
+  width: 400px;
+  height: 200px;
+  overflow: hidden;
+  .image-webflow {
+    transition: transform 0.25s;
+    width: 400px;
+    height: 200px;
+    &:hover  {
+      transform: scale(1.1);
+    }
+  }
+  
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $bg-color;
+  width: 100%;
+  height: 80px;
+}
